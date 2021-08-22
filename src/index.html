@@ -9,8 +9,12 @@
     <title>Webpack todo list</title>
 </head>
 <body>
-    <div class="container">
-</div>
+    <div class="infoPanel">
+        <span class="taskName">Task Name</span>
+        <span class="taskStatus">Status</span>
+        <span class="taskRemove">Remove</span>
+    </div>
+    <div class="container"></div>
     <input id="addTaskInput" type="text" value="">
     <button id="addTaskButton">Add task</button>
 </body>
@@ -18,6 +22,7 @@
 <script id="todoTemplate" type="text/template">
   <div class="task {{done}}" data-todo-id="{{id}}">
     <span class="taskText">{{title}}</span>
+    <span class="taskStatus">{{status}}</span>
     <button class="deleteTaskButton">Delete</button></div>
 </script>
 </html>
