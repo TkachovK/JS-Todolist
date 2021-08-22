@@ -12,7 +12,6 @@ export default class TodoController {
         this.todoModel = new TodoModel(TODO_URL);
         this.todoModel.fetchTodo()
         .then(()=>this.renderList())
-        console.log('s');
     }   
 
     initView($el){

@@ -44,7 +44,7 @@ export default class TodoView {
     }
 
     getListItemHtml({ id, title, isDone }) {
-        return todoTemplate.replace('{{id}}', id).replace('{{title}}', title).replace('{{done}}', isDone);
+        return todoTemplate.replace('{{id}}', id).replace('{{title}}', title).replace('{{done}}', isDone).replace('{{status}}', isDone?'Completed':'Todo');
     }
 
     getElementId($el) {
